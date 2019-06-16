@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------------
-    Author: Mavrick Thiry
+    Author: Snake "Aecy" Erkans
     Website: https://armapps.net
 
     N'utilisez pas ce script sans la permission de l'auteur.
@@ -12,15 +12,10 @@ const style = document.querySelector("link#style")
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition()
 
-recognition.onstart = function () {
-    console.log("voice's actived !")
-}
+recognition.onstart = function () {}
 
 recognition.onresult = function (e) {
     const transcript = e.results[e.resultIndex][0].transcript
-    
-    //content.textContent = transcript
-
     readOutLoud(transcript)
 }
 
