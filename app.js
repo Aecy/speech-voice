@@ -27,7 +27,7 @@ function readOutLoud (msg) {
     const speech = new SpeechSynthesisUtterance()
 
     if (msg.includes('comment ça va')) {
-        finalText = "Nique ta mère"
+        finalText = "Super ! Et vous ?"
         speech.text = finalText
     } else if (msg.includes('mode sombre')) {
         finalText = "Mode sombre du site internet activé"
